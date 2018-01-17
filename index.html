@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!--<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+    <header>
+        <h1><b>Matching Game</b></h1>
+    </header>
+
+    <section class="score-panel">
+        <div>
+            Time : <span class="time"></span>
+        </div>
+
+
+        Number of Moves:
+        <span class="moves"></span>
+        <button class="restart" onclick="restart()" disabled="disabled">
+             <i class="fa fa-refresh"></i> restart
+        </button>
+    </section>
+
+    <div class="game"></div>
+
+    <div class="modal">
+        <span class="close" onclick="close()">&times;</span>
+        <b>You Win!</b>
+        <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <div>
+            Time : <span class="time"></span>
+        </div>
+
+        <div class="restart" onclick="restart()">
+            <i class="fa fa-refresh"></i> Restart
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
